@@ -111,7 +111,7 @@
                     </div>
                     <div class="row" style="">
                         <div class="col-lg-4 ml-auto" style="margin-left: auto;text-align: justify; color: white;padding-top: 5%"><p class="lead">Fort de mon expérience professionnelle en tant que technicien chimiste en recherche et développement depuis 2012, je recherche maintenant de nouvelle perspective d'évolution</p></div>
-                        <div class="col-lg-4 mr-auto"style="margin-left: auto;text-align: justify; color: white;padding-top: 5%"><p class="lead">Je souhaite aujourd'hui me reconvertir dans l'informatique et plus précisement dans le développement de programme afin de pouvoir l'appliquer au secteur de la chimie.</p></div>
+                        <div class="col-lg-4 mr-auto"style="margin-left: auto;text-align: justify; color: white;padding-top: 5%"><p class="lead">Je souhaite aujourd'hui me reconvertir dans l'informatique et plus précisement dans la programmation d'application afin de pouvoir l'appliquer au secteur de la chimie.</p></div>
                     </div>
                     <div class="text-center">
                         <a href="{{asset('downloads/CV_FESSARD_BAPTISTE.pdf')}}" target="_blank" type="button" class="btn btn-primary btn-rounded">Obtenir mon CV  <i class="fas fa-cloud-download-alt"></i> </a>
@@ -399,7 +399,7 @@
 
             <!--Footer-->
             <div class="modal-footer justify-content-center">
-                <a href="download/commande.xlsm" type="button" class="btn btn-info">Télécharger <i class="fas fa-file-download"></i></a>
+                <a href="{{asset('downloads/Commandev4.xlsm')}}" type="button" class="btn btn-info">Télécharger <i class="fas fa-file-download"></i></a>
 
             </div>
         </div>
@@ -476,8 +476,7 @@
 </div>
 </html>
 <script>
-    $("#aboutCarousel").carousel({interval: false});
-    $("form").each(function(){this.onmouseup = this.blur();});
+    $("#aboutCarousel").carousel({interval: 6000});
 
 
 
