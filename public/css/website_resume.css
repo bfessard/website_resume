@@ -1,0 +1,233 @@
+#avatar
+{
+    display: block;
+    width: 300px;
+    height: 300px;
+    border-radius: 300px;
+    background: white;
+    margin-top: 60px;
+    margin-bottom:30px;
+    margin-left: auto;
+    margin-right: auto;
+    border-color: #2e74b5;
+}
+.background{
+    background: #2e74b5;
+}
+
+
+.mastead-heading-light  {
+    text-align: center;
+    color: white;
+    margin-bottom: 30px;
+    font-family: Calibri light;
+}
+.mastead-heading  {
+    text-align: center;
+    margin-bottom: 30px;
+    font-family: Calibri light;
+    color: #2e74b5;
+
+}
+.box {
+    position: relative;
+    margin-right: auto;
+    margin-left: auto;
+    margin-top : 10px;
+    margin-bottom: 10px;
+    border-radius: 20px;
+    transition: 0.5s;
+}
+.box:hover{
+    transition: 0.5s ;
+    cursor: pointer;
+    transform: scale(1.05);
+}
+
+
+.image-row{
+    height: auto;
+    padding-top: 5px;
+    padding-bottom: 5px;
+
+}
+section{
+
+}
+.divider-custom {
+    margin: 1.25rem 0 1.5rem;
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.divider-custom .divider-custom-line {
+    width: 100%;
+    max-width: 7rem;
+    height: 0.25rem;
+    background-color: #2e74b5;
+    border-radius: 1rem;
+    border-color: #2e74b5 !important;
+}
+.divider-custom .divider-custom-line:first-child {
+    margin-right: 1rem;
+}
+.divider-custom .divider-custom-line:last-child {
+    margin-left: 1rem;
+}
+.divider-custom .divider-custom-icon {
+    color: #2e74b5 !important;
+    font-size: 2rem;
+}
+.divider-custom.divider-light .divider-custom-line {
+    background-color: #fff !important;
+}
+.divider-custom.divider-light .divider-custom-icon {
+    color: #fff !important;
+}
+.carousel-slide {
+    position: relative;
+    margin-right: auto;
+    margin-left: auto;
+    margin-top : 10px;
+    margin-bottom: 10px;
+    border-radius: 20px;
+}
+.grayscale {
+    filter: grayscale(100%);
+    -webkit-filter: grayscale(100%);
+    max-width: 64px;
+    height: auto;
+
+}
+.grayscale:hover{
+    filter: grayscale(0%);
+    -webkit-filter: grayscale(0%);
+}
+
+.aboutCarousel {
+    margin-left: auto;
+    margin-right: auto;
+    padding-left: 20px;
+    height: 600px;
+    width: 100%;
+}
+
+@media all and(min-width: 576px) and (max-width: 767px){
+    .grayscale{
+        max-width: 45px;
+        height: auto;
+    }
+}
+
+
+@media all and (min-width: 768px) and (max-width: 991px){
+    .circle{
+        max-width: 100px;
+        height: auto;
+    }
+    .grayscale{
+        max-width: 45px;
+        height: auto;
+    }
+}
+@media all and (min-width: 992px)and (max-width: 1200px) {
+    .grayscale{
+        max-width: 55px;
+        height: auto;
+    }
+
+}
+@media all and (max-width: 509px) {
+    .grayscale{
+        max-width: 35px;
+        height: auto;
+    }
+    .aboutCarousel{
+        height: 550px;
+    }
+    .circle{
+        max-width: 80px;
+        height: auto;
+    }
+    
+}
+.card-title{
+    color:white;
+}
+
+.circle {
+    max-height: 110px;
+    width: auto;
+    border-radius: 50px;
+    background-color: #c0d5e8;
+}
+form{
+    padding: 20px;
+    width: auto;
+    margin-bottom: 20px;
+    border-bottom-width: 2px;
+    border-bottom-style: solid;
+    border-bottom-color: #ecf0f1;
+    border-top-style: none;
+    border-right-style: none;
+    border-left-style: none;
+    font-size: 1em;
+    font-weight: 100;
+    color: #ffffff;
+}
+.form-control{
+    border-radius: 0px;
+    padding: 20px;
+    width: 100%;
+    margin-bottom: 20px;
+    border-bottom-width: 2px;
+    border-bottom-style: solid;
+    border-bottom-color: black;
+    border-top-style: none;
+    border-right-style: none;
+    border-left-style: none;
+    font-size: 1em;
+    font-weight: 100;
+    color: #2e74b5;
+}
+.form-control:focus{
+    border-bottom-color: #2e74b5;
+    -webkit-box-shadow: none;
+    box-shadow: none;
+}
+.icon-contact{
+    transition: 0.5s;
+    font-size: 2em;
+}
+.icon-contact:hover{
+    transition: 0.5s;
+    font-size:3em;
+    color: #2e74b5
+}
+.text{
+    opacity:0;
+}
+.boite{
+     background-color: red;
+     position: relative;
+     max-width: 100px;
+     height: 100px;
+     left: 0;
+     border-radius: 30px;
+    transition: 1s;
+ }
+.boite:hover{
+    width: 500px;
+    transition:1s;
+}
+.circle-contact{
+    background-color: #c0d5e8;
+    border-radius: 50px;
+    left: 0;
+    transition: left 1s, transform 1s;
+}
+.circle-contact:hover{
+    left: 100%;
+    transform: translateX(-100%);
+}
