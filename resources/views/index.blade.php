@@ -435,7 +435,7 @@
             <div class="modal-footer justify-content-center">
                 <a href="http://baptistefessard.fr/mesvoyages/" type="button" class="btn btn-info" target="_blank">VISITER <i class="fas fa-play"></i></a>
                 <a href="https://github.com/bfessard/mon_site_photo" type="button" class="btn btn-info" target="_blank">GITHUB <i class="fab fa-github"></i></a>
-            </div>javas
+            </div>
         </div>
         <!--/.Content-->
     </div>
