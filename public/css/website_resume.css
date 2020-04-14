@@ -196,6 +196,15 @@ form{
     -webkit-box-shadow: none;
     box-shadow: none;
 }
+.help-block {
+    border-radius: 0px;
+    padding: 20px;
+    width: 100%;
+
+    font-size: 1em;
+    font-weight: 100;
+    color: #e74c3c ;
+}
 .icon-contact{
     transition: 0.5s;
     font-size: 2em;
