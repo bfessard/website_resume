@@ -21,6 +21,11 @@ class ContactController extends Controller
             $message->to('baptistefessard@gmail.com')->subject('Contact');
         });
 
-        return redirect()->back();
+        return back()->with('success', 'Votre email a bien été envoyé');
+
+
+
+
+
     }
 }

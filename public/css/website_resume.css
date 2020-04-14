@@ -52,7 +52,8 @@
 
 }
 section{
-
+    margin-top: 10px;
+ margin-bottom: 10px;
 }
 .divider-custom {
     margin: 1.25rem 0 1.5rem;
@@ -176,58 +177,41 @@ form{
     font-weight: 100;
     color: #ffffff;
 }
-.form-control{
+.form-control {
     border-radius: 0px;
     padding: 20px;
     width: 100%;
     margin-bottom: 20px;
     border-bottom-width: 2px;
     border-bottom-style: solid;
-    border-bottom-color: black;
+    border-bottom-color: #2e74b5;
     border-top-style: none;
     border-right-style: none;
     border-left-style: none;
     font-size: 1em;
     font-weight: 100;
-    color: #2e74b5;
+
 }
+.help-block {
+    border-radius: 0px;
+    padding: 20px;
+    width: 100%;
+
+    font-size: 1em;
+    font-weight: 100;
+    color: #e74c3c ;
+}
+
 .form-control:focus{
-    border-bottom-color: #2e74b5;
+    border-bottom-color: #c0d5e8 ;
     -webkit-box-shadow: none;
     box-shadow: none;
 }
-.icon-contact{
-    transition: 0.5s;
-    font-size: 2em;
+is-invalid:focus{
+    -webkit-box-shadow: none;
+    box-shadow: none;
 }
-.icon-contact:hover{
-    transition: 0.5s;
-    font-size:3em;
-    color: #2e74b5
-}
-.text{
-    opacity:0;
-}
-.boite{
-     background-color: red;
-     position: relative;
-     max-width: 100px;
-     height: 100px;
-     left: 0;
-     border-radius: 30px;
-    transition: 1s;
- }
-.boite:hover{
-    width: 500px;
-    transition:1s;
-}
-.circle-contact{
-    background-color: #c0d5e8;
-    border-radius: 50px;
-    left: 0;
-    transition: left 1s, transform 1s;
-}
-.circle-contact:hover{
-    left: 100%;
-    transform: translateX(-100%);
+
+.navbar{
+    position: 40px;
 }

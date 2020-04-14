@@ -4,7 +4,7 @@
     <meta charset="utf-8">
 </head>
 <body>
-<h2>Prise de contact sur mon beau site</h2>
+<h2>Prise de contact sur mon portfolio</h2>
 <p>Réception d'une prise de contact avec les éléments suivants :</p>
 <ul>
     <li><strong>Nom</strong> : {{ $nom }}</li>

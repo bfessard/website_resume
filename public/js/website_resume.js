@@ -21,20 +21,4 @@ function removeText(x){
     document.getElementById('value'+test.indexOf(x)).innerHTML='';
 }
 
-function copy(x){
-    console.log(x)
-    var paragraph = document.getElementById(x);
-    var children = paragraph.childNodes;
-
-    for (var i = 0, c = children.length; i < c; i++) {
-
-        if (children[i].nodeType === Node.ELEMENT_NODE) { // C'est un élément HTML
-            alert(children[i].firstChild.data);
-        } else { // C'est certainement un nœud textuel
-            alert(children[i].data);
-        }
-
-    }
-}
-
 

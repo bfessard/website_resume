@@ -14,5 +14,5 @@
 Route::get('/','ContactController@getForm');
 
 Route::post('/','ContactController@postForm');
-route::get('welcome','ContactController@getFrom');
+
 

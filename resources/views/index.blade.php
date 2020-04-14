@@ -1,9 +1,10 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="fr">
 <head>
     <meta charset="UTF-8">
-    <title>Mon Portfolio</title>
+    <title>Baptiste FESSARD</title>
     <link rel="stylesheet" href="{{asset('css/bootstrap.min.css')}}">
+
     <link href="{{asset('css/website_resume.css') }}" rel="stylesheet">
     <link href="{{asset('css/fontawesome-free-5.13.0-web/css/fontawesome.css')}}" rel="stylesheet">
     <link href="{{asset('css/fontawesome-free-5.13.0-web/css/brands.css')}}" rel="stylesheet">
@@ -11,19 +12,21 @@
     <script src="{{ asset('js/jquery-3.4.1.min.js') }}"></script>
     <script src="{{ asset('js/website_resume.js') }}"></script>
     <script src="{{ asset('js/Chart.bundle.min.js') }}"></script>
-    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.9/umd/popper.min.js"></script>
-    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js"></script>
+    <script src="{{asset('js/bootstrap.min.js')}}"></script>
+
+
+
 </head>
+
 <body>
-<!--
-<nav class="nav justify-content-right " >
-    <a class="navbar-brand" href="#home">Portfolio</a>
-    <a class="nav-link js-scroll-trigger" href="#portfolio">Portfolio</a>
-    <a class="nav-link" href="#about">A propos</a>
-    <a class="nav-link" href="#contact">Contact</a>
-</nav>
--->
+
+
 <header id="home" class="container-fluid background " style= "height:auto">
+    @if(Session::has('success'))
+        <div class="alert alert-success" style="text-align: center">
+            {{ Session::get('success') }}
+        </div>
+    @endif
 
     <div class="row">
         <div class="col-12">
@@ -48,7 +51,7 @@
 
             <div class="divider-custom">
                 <div class="divider-custom-line"></div>
-                <div class="divider-custom-icon"><i class="fas fa-arrow-down"></i></div>
+                <div class="divider-custom-icon"><i class="fas fa-book"></i></div>
                 <div class="divider-custom-line"></div>
             </div>
             <div class="col-sm-12 col-md-5 box" style="background-color:  #a3e4d7 ">
@@ -68,7 +71,7 @@
                 </div>
             </div>
             <div class="col-sm-12 col-md-5 box" style="background-color:  #aed6f1 " >
-                <div href="" data-toggle="modal" data-target="#infos">
+                <div href="" data-toggle="modal" data-target="#modal4">
                     <div class="text-center"> <img class="image-row" src="images/browser.png" alt="Alt text"  /> </div>
                 </div>
             </div>
@@ -110,8 +113,8 @@
                         <div class="divider-custom-line"></div>
                     </div>
                     <div class="row" style="">
-                        <div class="col-lg-4 ml-auto" style="margin-left: auto;text-align: justify; color: white;padding-top: 5%"><p class="lead">Fort de mon expérience professionnelle en tant que technicien chimiste en recherche et développement depuis 2012, je recherche maintenant de nouvelle perspective d'évolution</p></div>
-                        <div class="col-lg-4 mr-auto"style="margin-left: auto;text-align: justify; color: white;padding-top: 5%"><p class="lead">Je souhaite aujourd'hui me reconvertir dans l'informatique et plus précisement dans la programmation d'application afin de pouvoir l'appliquer au secteur de la chimie.</p></div>
+                        <div class="col-lg-4 ml-auto" style="margin-left: auto;text-align: justify; color: white;padding-top: 7%"><p class="lead">Fort de mon expérience professionnelle en tant que technicien chimiste en recherche et développement depuis 2012, je recherche maintenant de nouvelle perspective d'évolution</p></div>
+                        <div class="col-lg-4 mr-auto"style="margin-left: auto;text-align: justify; color: white;padding-top: 7%"><p class="lead">Je souhaite aujourd'hui me reconvertir dans l'informatique et plus précisement dans la programmation d'application afin de pouvoir l'appliquer au secteur de la chimie.</p></div>
                     </div>
                     <div class="text-center">
                         <a href="{{asset('downloads/CV_FESSARD_BAPTISTE.pdf')}}" target="_blank" type="button" class="btn btn-primary btn-rounded">Obtenir mon CV  <i class="fas fa-cloud-download-alt"></i> </a>
@@ -316,22 +319,24 @@
             <div class="col-8">
                 <div class="panel panel-info">
 
-                    <div class="form-group">
+                    <div class="panel-body">
+
                         {!! Form::open(['url' => '/']) !!}
-                        <div class="{!! $errors->has('nom') ? 'has-error' : '' !!} ">
-                            {!! Form::text('nom', null, ['class' => 'form-control', 'placeholder' => 'Votre nom']) !!}
-                            {!! $errors->first('nom', '<small class="help-block">:message</small>') !!}
-                        </div>
-                        <div class="{!! $errors->has('email') ? 'has-error' : '' !!} ">
-                            {!! Form::email('email', null, ['class' => 'form-control', 'placeholder' => 'Votre email']) !!}
-                            {!! $errors->first('email', '<small class="help-block">:message</small>') !!}
-                        </div>
-                        <div class="{!! $errors->has('texte') ? 'has-error' : '' !!} ">
-                            {!! Form::textarea ('texte', null, ['class' => 'form-control', 'placeholder' => 'Votre message']) !!}
-                            {!! $errors->first('texte', '<small class="help-block">:message</small>') !!}
-                        </div>
+                            <div class="form-group">
+                                {!! Form::text('nom', null, ['class' => 'form-control', 'placeholder' => 'Votre nom']) !!}
+                                {!! $errors->first('nom', '<small class="help-block">:message</small>') !!}
+                            </div>
+                            <div class="form-group">
+                                {!! Form::text('email', null, ['class' => 'form-control', 'placeholder' => 'Votre email']) !!}
+                                {!! $errors->first('email', '<small class="help-block">:message</small>') !!}
+                            </div>
+                            <div class="form-group">
+                                {!! Form::textarea ('texte', null, ['class' => 'form-control', 'placeholder' => 'Votre message']) !!}
+                                {!! $errors->first('texte', '<small class="help-block">:message</small>') !!}
+                            </div>
                         {!! Form::submit('Envoyer !', ['class' => 'btn btn-info pull-right']) !!}
                         {!! Form::close() !!}
+
 
                     </div>
                 </div>
@@ -339,27 +344,27 @@
             <div class="col-xl-4" style="margin-top: 2%">
                 <div class="row">
                     <div class="col-xl-12 " onmouseover="showText('phone')"  onmouseout="removeText('phone')" style="margin-top: 5px; margin-bottom: 5px">
-                        <a href="tel:0652122675"><img class="icon-contact blue"  src="images/smartphone.png" id="phone" style=""/></a>
-                        <span class="" id="value0" onclick="copy(this.id)" style="padding-left: 10px"></span>
+                        <a href="tel:0652122675"><img class="icon-contact square"  src="images/smartphone.png" id="phone" style=""/></a>
+                        <span class="" id="value0"  style="padding-left: 10px"></span>
                     </div>
                     <div class="col-xl-12" onmouseover="showText('map')" onmouseout="removeText('map')" style="margin-top: 5px; margin-bottom: 5px">
-                        <a href="https://goo.gl/maps/18QpWSYb8nVzqHJm7" target="_blank"><img class=""  src="images/home-run.png" id="home" /></a>
-                        <span id="value1" style="padding-left: 10px" ></span>
+                        <a href="https://goo.gl/maps/18QpWSYb8nVzqHJm7" target="_blank"><img class="icon-contact"  src="images/home-run.png" id="home" /></a>
+                        <span id="value1"  style="padding-left: 10px" ></span>
                     </div>
                     <div class="col-xl-12" onmouseover="showText('mail')" onmouseout="removeText('mail')" style="margin-top: 5px; margin-bottom: 5px">
-                        <a href="mailto:baptistefessard@gmail.com"><img  class=""  src="images/email.png" id="home" /></a>
+                        <a href="mailto:baptistefessard@gmail.com"><img  class="icon-contact"  src="images/email.png" id="home" /></a>
                         <span id="value2" style="padding-left: 10px" ></span>
                     </div>
                     <div class="col-xl-12" onmouseover="showText('skype')" onmouseout="removeText('skype')" style="margin-top: 5px; margin-bottom: 5px">
-                        <a href="skype:baptistefessard@gmail.com?chat" ><img class=""  src="images/skype.png" id="home" /></a>
+                        <a href="skype:baptistefessard@gmail.com?chat" ><img class="icon-contact"  src="images/skype.png" id="home" /></a>
                         <span id="value3" style="padding-left: 10px"></span>
                     </div>
                     <div class="col-xl-12" onmouseover="showText('github')" onmouseout="removeText('github')" style="margin-top: 5px; margin-bottom: 5px">
-                        <a href="https://github.com/bfessard?tab=repositories" target="_blank"><img class=""  src="images/github(2).png" id="github2" /></a>
+                        <a href="https://github.com/bfessard?tab=repositories" target="_blank"><img class="icon-contact"  src="images/github(2).png" id="github2" /></a>
                         <span id="value4" style="padding-left: 10px"></span>
                     </div>
                     <div class="col-xl-12" onmouseover="showText('linkedin')" onmouseout="removeText('linkedin')" style="margin-top: 5px; margin-bottom: 5px">
-                        <a href="https://www.linkedin.com/in/baptiste-fessard-8b37a189/" target="_blank"><img class=""  src="images/linkedin.png" id="home" /></a>
+                        <a href="https://www.linkedin.com/in/baptiste-fessard-8b37a189/" target="_blank"><img class="icon-contact"  src="images/linkedin.png" id="home" /></a>
                         <span id="value5" style="padding-left: 10px"></span>
                     </div>
                     <div class="boite"></div>
@@ -390,7 +395,7 @@
             <!--Body-->
             <div class="modal-body">
 
-                <div class="text-center"><img src="images/box.png" alt=""class="img-fluid image-row" style="background-color: #a3e4d7"></div>
+                <div class="text-center"><img src="images/box.png" alt=""class="img-fluid image-row" style="background-color: #a3e4d7; padding: 20px; border-radius: 20px"></div>
 
                 <div class="text-center">
                     <p>Mon premier développement, cet outil génère et automatise les commandes de fournitures pour les différents laboratoires. </p>
@@ -406,6 +411,7 @@
         <!--/.Content-->
     </div>
 </div>
+<!-- /modal generator 1 -->
 <!-- modal generator 2 -->
 <div class="modal fade left" id="modal2" tabindex="-1" role="dialog" aria-labelledby="myModalLabel"
      aria-hidden="true">
@@ -424,7 +430,7 @@
             <!--Body-->
             <div class="modal-body">
 
-                <div class="text-center"><img src="images/pin.png" alt=""class="img-fluid image-row" style="background-color: #fff176"></div>
+                <div class="text-center"><img src="images/pin.png" alt=""class="img-fluid image-row" style="background-color: #fff176; padding: 20px; border-radius: 20px"></div>
 
                 <div class="text-center">
                     <p>Affiche sur une carte les photos des pays et villes que j'ai visité lors de mes différents voyages. </p>
@@ -435,11 +441,12 @@
             <div class="modal-footer justify-content-center">
                 <a href="http://baptistefessard.fr/mesvoyages/" type="button" class="btn btn-info" target="_blank">VISITER <i class="fas fa-play"></i></a>
                 <a href="https://github.com/bfessard/mon_site_photo" type="button" class="btn btn-info" target="_blank">GITHUB <i class="fab fa-github"></i></a>
-            </div>javas
+            </div>
         </div>
         <!--/.Content-->
     </div>
 </div>
+<!-- /modal generator 2 -->
 <!-- modal generator 3 -->
 <div class="modal fade left" id="modal3" tabindex="-1" role="dialog" aria-labelledby="myModalLabel"
      aria-hidden="true">
@@ -458,28 +465,75 @@
             <!--Body-->
             <div class="modal-body">
 
-                <div class="text-center"><img src="images/beer.png" alt=""class="img-fluid image-row" style="background-color: #f1948a"></div>
+                <div class="text-center"><img src="images/beer.png" alt=""class="img-fluid image-row" style="background-color: #f1948a; padding: 20px; border-radius: 20px"></div>
 
                 <div class="text-center">
-                    <p>Affiche sur une carte les photos des pays et villes que j'ai visité lors de mes différents voyages. </p>
+                    <p>Site qui permet de crééer et de partager ses recettes de bières.</p>
                 </div>
             </div>
 
             <!--Footer-->
-            <div class="modal-footer justify-content-center">
-                <a href="" type="button" class="btn btn-info" target="_blank">WORKING PROGRESS <i class="fas fa-tools"></i></a>
+            <div class="modal-footer justify-content-center" style="color: white">
+                <a  type="button" class="btn btn-info" >WORKING PROGRESS <i class="fas fa-tools"></i></a>
                 <a href="https://github.com/bfessard/CraftMyBeer" type="button" class="btn btn-info" target="_blank">GITHUB <i class="fab fa-github"></i></a>
             </div>
         </div>
         <!--/.Content-->
     </div>
 </div>
+<!-- /modal generator 3 -->
+<!-- modal generator 4 -->
+<div class="modal fade left" id="modal4" tabindex="-1" role="dialog" aria-labelledby="myModalLabel"
+     aria-hidden="true" >
+    <div class="modal-dialog modal-notify modal-info modal-side modal-top-left" role="document" >
+        <!--Content-->
+        <div class="modal-content" >
+            <!--Header-->
+            <div class="modal-header">
+                <p class="heading lead">CraftMyBeer</p>
+
+                <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                    <span aria-hidden="true" class="white-text">&times;</span>
+                </button>
+            </div>
+
+            <!--Body-->
+            <div class="modal-body" >
+
+                <div class="text-center"><img src="images/browser.png" alt=""class="img-fluid image-row" style="background-color: #aed6f1; padding: 20px; border-radius: 20px" ></div>
+
+                <div class="text-center">
+                    <p>Mon portfolio </p>
+                </div>
+            </div>
+
+            <!--Footer-->
+            <div class="modal-footer justify-content-center">
+                <a href="http://baptistefessard.fr" type="button" class="btn btn-info" >VISITER <i class="fas fa-play"></i></a>
+                <a href="https://github.com/bfessard/website_resume" type="button" class="btn btn-info" target="_blank">GITHUB <i class="fab fa-github"></i></a>
+            </div>
+        </div>
+        <!--/.Content-->
+    </div>
+</div>
+<!-- /modal generator 4 -->
 </html>
 <script>
-    $("#aboutCarousel").carousel({interval: 6000});
+
+    $().ready(function () {
+        $("#contactForm").validate({
+            rules :{
+                nom : {
+                    required : true,
+                }
+            }
+        });
+
+    });
 
 
 
+</script>
 
 
 
