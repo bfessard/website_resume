@@ -461,7 +461,7 @@
                 <div class="text-center"><img src="images/beer.png" alt=""class="img-fluid image-row" style="background-color: #f1948a"></div>
 
                 <div class="text-center">
-                   <!-- <p>Affiche sur une carte les photos des pays et villes que j'ai visité lors de mes différents voyages. </p> -->
+                    <p>Affiche sur une carte les photos des pays et villes que j'ai visité lors de mes différents voyages. </p> 
                 </div>
             </div>
 
