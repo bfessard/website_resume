@@ -476,8 +476,7 @@
 </div>
 </html>
 <script>
-    $("#aboutCarousel").carousel({interval: false});
-    $("form").each(function(){this.onmouseup = this.blur();});
+
 
 
 
