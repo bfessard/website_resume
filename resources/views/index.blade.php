@@ -48,7 +48,7 @@
 
             <div class="divider-custom">
                 <div class="divider-custom-line"></div>
-                <div class="divider-custom-icon"><i class="fas fa-arrow-down"></i></div>
+                <div class="divider-custom-icon"><i class="fas fa-book-open"></i></div>
                 <div class="divider-custom-line"></div>
             </div>
             <div class="col-sm-12 col-md-5 box" style="background-color:  #a3e4d7 ">
@@ -110,7 +110,7 @@
                         <div class="divider-custom-line"></div>
                     </div>
                     <div class="row" style="">
-                        <div class="col-lg-4 ml-auto" style="margin-left: auto;text-align: justify; color: white;padding-top: 5%"><p class="lead">Fort de mon expérience professionnelle en tant que technicien chimiste en recherche et développement depuis 2012, je recherche maintenant de nouvelle perspective d'évolution</p></div>
+                        <div class="col-lg-4 ml-auto" style="text-align: justify; color: white;padding-top: 5%"><p class="lead">Fort de mon expérience professionnelle en tant que technicien chimiste en recherche et développement depuis 2012, je recherche maintenant de nouvelle perspective d'évolution</p></div>
                         <div class="col-lg-4 mr-auto"style="margin-left: auto;text-align: justify; color: white;padding-top: 5%"><p class="lead">Je souhaite aujourd'hui me reconvertir dans l'informatique et plus précisement dans le développement de programme afin de pouvoir l'appliquer au secteur de la chimie.</p></div>
                     </div>
                     <div class="text-center">
@@ -304,64 +304,79 @@
         </div>
     </div>
 </section>
-<section id="contact">
+<section id="contact" class="py-3">
     <h2 class="mastead-heading text-important mb-0">Contact</h2>
     <div class="divider-custom">
         <div class="divider-custom-line"></div>
         <div class="divider-custom-icon"><i class="fas fa-envelope-open-text"></i></div>
         <div class="divider-custom-line"></div>
     </div>
-    <div class="container-fluid" style="height:500px">
-        <div class="row">
-            <div class="col-8">
-                <div class="panel panel-info">
-
-                    <div class="form-group">
-                        {!! Form::open(['url' => '/']) !!}
-                        <div class="{!! $errors->has('nom') ? 'has-error' : '' !!} ">
-                            {!! Form::text('nom', null, ['class' => 'form-control', 'placeholder' => 'Votre nom']) !!}
-                            {!! $errors->first('nom', '<small class="help-block">:message</small>') !!}
-                        </div>
-                        <div class="{!! $errors->has('email') ? 'has-error' : '' !!} ">
-                            {!! Form::email('email', null, ['class' => 'form-control', 'placeholder' => 'Votre email']) !!}
-                            {!! $errors->first('email', '<small class="help-block">:message</small>') !!}
-                        </div>
-                        <div class="{!! $errors->has('texte') ? 'has-error' : '' !!} ">
-                            {!! Form::textarea ('texte', null, ['class' => 'form-control', 'placeholder' => 'Votre message']) !!}
-                            {!! $errors->first('texte', '<small class="help-block">:message</small>') !!}
-                        </div>
-                        {!! Form::submit('Envoyer !', ['class' => 'btn btn-info pull-right']) !!}
-                        {!! Form::close() !!}
-
+    <div class="container">
+        <div class="row center-block">
+            <div class="col-md-12 col-sm-12 align-self-center">
+                <div class="form-group">
+                    {!! Form::open(['url' => '/']) !!}
+                    <div class="{!! $errors->has('nom') ? 'has-error' : '' !!} ">
+                        {!! Form::text('nom', null, ['class' => 'form-control', 'placeholder' => 'Votre nom']) !!}
+                        {!! $errors->first('nom', '<small class="help-block">:message</small>') !!}
                     </div>
+                    <div class="{!! $errors->has('email') ? 'has-error' : '' !!} ">
+                        {!! Form::email('email', null, ['class' => 'form-control', 'placeholder' => 'Votre email']) !!}
+                        {!! $errors->first('email', '<small class="help-block">:message</small>') !!}
+                    </div>
+                    <div class="{!! $errors->has('texte') ? 'has-error' : '' !!} ">
+                        {!! Form::textarea ('texte', null, ['class' => 'form-control', 'placeholder' => 'Votre message']) !!}
+                        {!! $errors->first('texte', '<small class="help-block">:message</small>') !!}
+                    </div>
+                    {!! Form::submit('Envoyer !', ['class' => 'btn btn-info pull-right']) !!}
+                    {!! Form::close() !!}
+
                 </div>
             </div>
-            <div class="col-xl-4" style="margin-top: 2%">
+        </div>
+
+
+       </div>
+
+
+            </div>
+            <!---
+            <div class="col-xl-12" style="margin-top: 2%">
+                <div class="row justify-content-md-center">
+                    <div class="col-md-5">
+                        <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d10409.170476887546!2d1.0194332000000002!3d49.28979975!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x47e11f280fcf6d3d%3A0xd51bda08f96f2077!2s4%20Rue%20du%20Mar%C3%A9chal%20de%20Lattre%20de%20Tassigny%2C%2076500%20Elbeuf!5e0!3m2!1sfr!2sfr!4v1588601130470!5m2!1sfr!2sfr" width="600" height="450" frameborder="0" style="border:0;" allowfullscreen="" aria-hidden="false" tabindex="0">
+                        </iframe>
+                    </div>
+                    <div class="col-md-5">
+                        <div class="col-xl-12 " onmouseover="showText('phone')"  onmouseout="removeText('phone')" style="margin-top: 5px; margin-bottom: 5px">
+                            <a href="tel:0652122675"><img class="icon-contact blue"  src="images/smartphone.png" id="phone" style=""/></a>
+                            <span class="" id="value0" onclick="copy(this.id)" style="padding-left: 10px"></span>
+                        </div>
+                        <div class="col-xl-12" onmouseover="showText('map')" onmouseout="removeText('map')" style="margin-top: 5px; margin-bottom: 5px">
+                            <a href="https://goo.gl/maps/18QpWSYb8nVzqHJm7" target="_blank"><img class=""  src="images/home-run.png" id="home" /></a>
+                            <span id="value1" style="padding-left: 10px" ></span>
+                        </div>
+                        <div class="col-xl-12" onmouseover="showText('mail')" onmouseout="removeText('mail')" style="margin-top: 5px; margin-bottom: 5px">
+                            <a href="mailto:baptistefessard@gmail.com"><img  class=""  src="images/email.png" id="home" /></a>
+                            <span id="value2" style="padding-left: 10px" ></span>
+                        </div>
+                        <div class="col-xl-12" onmouseover="showText('skype')" onmouseout="removeText('skype')" style="margin-top: 5px; margin-bottom: 5px">
+                            <a href="skype:baptistefessard@gmail.com?chat" ><img class=""  src="images/skype.png" id="home" /></a>
+                            <span id="value3" style="padding-left: 10px"></span>
+                        </div>
+                        <div class="col-xl-12" onmouseover="showText('github')" onmouseout="removeText('github')" style="margin-top: 5px; margin-bottom: 5px">
+                            <a href="https://github.com/bfessard?tab=repositories" target="_blank"><img class=""  src="images/github(2).png" id="github2" /></a>
+                            <span id="value4" style="padding-left: 10px"></span>
+                        </div>
+                        <div class="col-xl-12" onmouseover="showText('linkedin')" onmouseout="removeText('linkedin')" style="margin-top: 5px; margin-bottom: 5px">
+                            <a href="https://www.linkedin.com/in/baptiste-fessard-8b37a189/" target="_blank"><img class=""  src="images/linkedin.png" id="home" /></a>
+                            <span id="value5" style="padding-left: 10px"></span>
+                        </div>
+                    </div>
+                </div>
+
                 <div class="row">
-                    <div class="col-xl-12 " onmouseover="showText('phone')"  onmouseout="removeText('phone')" style="margin-top: 5px; margin-bottom: 5px">
-                        <a href="tel:0652122675"><img class="icon-contact blue"  src="images/smartphone.png" id="phone" style=""/></a>
-                        <span class="" id="value0" onclick="copy(this.id)" style="padding-left: 10px"></span>
-                    </div>
-                    <div class="col-xl-12" onmouseover="showText('map')" onmouseout="removeText('map')" style="margin-top: 5px; margin-bottom: 5px">
-                        <a href="https://goo.gl/maps/18QpWSYb8nVzqHJm7" target="_blank"><img class=""  src="images/home-run.png" id="home" /></a>
-                        <span id="value1" style="padding-left: 10px" ></span>
-                    </div>
-                    <div class="col-xl-12" onmouseover="showText('mail')" onmouseout="removeText('mail')" style="margin-top: 5px; margin-bottom: 5px">
-                        <a href="mailto:baptistefessard@gmail.com"><img  class=""  src="images/email.png" id="home" /></a>
-                        <span id="value2" style="padding-left: 10px" ></span>
-                    </div>
-                    <div class="col-xl-12" onmouseover="showText('skype')" onmouseout="removeText('skype')" style="margin-top: 5px; margin-bottom: 5px">
-                        <a href="skype:baptistefessard@gmail.com?chat" ><img class=""  src="images/skype.png" id="home" /></a>
-                        <span id="value3" style="padding-left: 10px"></span>
-                    </div>
-                    <div class="col-xl-12" onmouseover="showText('github')" onmouseout="removeText('github')" style="margin-top: 5px; margin-bottom: 5px">
-                        <a href="https://github.com/bfessard?tab=repositories" target="_blank"><img class=""  src="images/github(2).png" id="github2" /></a>
-                        <span id="value4" style="padding-left: 10px"></span>
-                    </div>
-                    <div class="col-xl-12" onmouseover="showText('linkedin')" onmouseout="removeText('linkedin')" style="margin-top: 5px; margin-bottom: 5px">
-                        <a href="https://www.linkedin.com/in/baptiste-fessard-8b37a189/" target="_blank"><img class=""  src="images/linkedin.png" id="home" /></a>
-                        <span id="value5" style="padding-left: 10px"></span>
-                    </div>
+
                     <div class="boite"></div>
 
                 </div>
@@ -369,7 +384,48 @@
 
         </div>
     </div>
+    -->
 </section>
+<footer id="sticky-footer" class="py-4 bg-dark text-white-50">
+    <div class="container ">
+        <div class="row text-center">
+            <div class="col">
+                <span style="font-size: 2em; color: white">
+                  <a href="tel:0652122675" class="link"><i class="fas fa-mobile-alt"></i></a>
+                </span>
+            </div>
+            <div class="col">
+                <span style="font-size: 2em; color: white">
+                    <a href="mailto:baptistefessard@gmail.com"class="link"><i class="fas fa-envelope"></i></a>
+                </span>
+            </div>
+            <div class="col">
+                <span style="font-size: 2em; color: white">
+                    <a href="skype:baptistefessard@gmail.com?chat"class="link"><i class="fab fa-skype"></i></a>
+                </span>
+            </div>
+            <div class="col">
+                <span style="font-size: 2em; color: white">
+                    <a href="https://github.com/bfessard?tab=repositories" target="_blank" class="link"> <i class="fab fa-github"></i></a>
+                </span>
+            </div>
+            <div class="w-100"></div>
+            <div class="col">
+                <p>06.52.12.26.75</p>
+            </div>
+            <div class="col">
+                <p>baptistefessard@gmail.com</p>
+            </div>
+            <div class="col">
+                <p>baptiste fessard</p>
+            </div>
+            <div class="col">
+                <p>bfessard</p>
+            </div>
+        </div>
+    </div>
+
+</footer>
 </body>
 
 <!-- modal generator 1 -->
@@ -406,6 +462,7 @@
         <!--/.Content-->
     </div>
 </div>
+<!--/ modal generator 1 -->
 <!-- modal generator 2 -->
 <div class="modal fade left" id="modal2" tabindex="-1" role="dialog" aria-labelledby="myModalLabel"
      aria-hidden="true">
@@ -440,6 +497,7 @@
         <!--/.Content-->
     </div>
 </div>
+<!--/ modal generator 2 -->
 <!-- modal generator 3 -->
 <div class="modal fade left" id="modal3" tabindex="-1" role="dialog" aria-labelledby="myModalLabel"
      aria-hidden="true">
@@ -474,6 +532,7 @@
         <!--/.Content-->
     </div>
 </div>
+<!--/ modal generator 3 -->
 </html>
 <script>
 
