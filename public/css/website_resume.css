@@ -1,5 +1,11 @@
+
+
 body{
-    background: #FFFFFF;
+    font-family: 'Lato light',sans-serif;
+}
+h1{
+    font-family: 'Kalam', cursive;
+    font-size: 4em;
 }
 
 #avatar
@@ -24,12 +30,12 @@ body{
     text-align: center;
     color: white;
     margin-bottom: 30px;
-    font-family: Calibri light;
+
 }
 .mastead-heading  {
     text-align: center;
     margin-bottom: 30px;
-    font-family: Calibri light;
+
     color: #2e74b5;
 
 }
@@ -108,24 +114,37 @@ section{
     filter: grayscale(0%);
     -webkit-filter: grayscale(0%);
 }
-
 .aboutCarousel {
     margin-left: auto;
     margin-right: auto;
     padding-left: 20px;
     height: 600px;
-    width: 100%;
-}
+    width: 100% !important;
 
-@media all and(min-width: 576px) and (max-width: 767px){
+}
+@media screen  and (max-width: 576px) {
     .grayscale{
-        max-width: 45px;
+        max-width: 35px;
+        height: auto;
+    }
+
+    .circle{
+        max-width: 80px;
+        height: auto;
+    }
+    .aboutCarousel {
+        height: 650px;
+    }
+
+
+}
+@media screen and (min-width: 576px){
+    .grayscale{
+        max-width: 35px;
         height: auto;
     }
 }
-
-
-@media all and (min-width: 768px) and (max-width: 991px){
+@media screen  and (min-width: 768px){
     .circle{
         max-width: 100px;
         height: auto;
@@ -134,28 +153,17 @@ section{
         max-width: 45px;
         height: auto;
     }
+
 }
-@media all and (min-width: 992px)and (max-width: 1200px) {
+@media screen  and (min-width: 992px) {
     .grayscale{
         max-width: 55px;
         height: auto;
     }
+}
 
-}
-@media all and (max-width: 509px) {
-    .grayscale{
-        max-width: 35px;
-        height: auto;
-    }
-    .aboutCarousel{
-        height: 550px;
-    }
-    .circle{
-        max-width: 80px;
-        height: auto;
-    }
-    
-}
+
+
 .card-title{
     color:white;
 }
@@ -251,5 +259,5 @@ form{
     color : #FFFFFF !important;
 }
 .link:hover{
-    color : #999c9f!important;
+    color : #c0d5e8!important;
 }

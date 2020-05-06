@@ -8,9 +8,12 @@
     <link href="{{asset('css/fontawesome-free-5.13.0-web/css/fontawesome.css')}}" rel="stylesheet">
     <link href="{{asset('css/fontawesome-free-5.13.0-web/css/brands.css')}}" rel="stylesheet">
     <link href="{{asset('css/fontawesome-free-5.13.0-web/css/solid.css')}}" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Lato:ital,wght@0,100;0,300;0,400;0,700;0,900;1,100;1,300;1,400;1,700;1,900&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Lobster&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Kalam&display=swap" rel="stylesheet">
     <script src="{{ asset('js/jquery-3.4.1.min.js') }}"></script>
-    <script src="{{ asset('js/website_resume.js') }}"></script>
-    <script src="{{ asset('js/Chart.bundle.min.js') }}"></script>
+
+
     <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.9/umd/popper.min.js"></script>
     <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js"></script>
 </head>
@@ -67,7 +70,7 @@
 
                 </div>
             </div>
-            <div class="col-sm-12 col-md-5 box" style="background-color:  #aed6f1 " >
+            <div class="col-sm-12 col-md-5 box" style="background-color:  #aed6f1" >
                 <div href="" data-toggle="modal" data-target="#infos">
                     <div class="text-center"> <img class="image-row" src="images/browser.png" alt="Alt text"  /> </div>
                 </div>
@@ -78,7 +81,7 @@
 <section id="about" style="height: auto">
     <div class="container-fluid background" >
 
-        <div id="aboutCarousel" class="carousel slide carousel-multi-item aboutCarousel col-md-8" data-ride="carousel" style="">
+        <div id="aboutCarousel" class="carousel slide carousel-multi-item aboutCarousel" data-ride="carousel" data-interval="0" style="">
             <!-- Controls-->
             <a class="carousel-control-prev" href="#aboutCarousel" role="button" data-slide="prev">
                 <span class="carousel-control-prev-icon" aria-hidden="true"></span>
@@ -109,9 +112,9 @@
                         <div class="divider-custom-icon"><i class="fas fa-comment-alt"></i></div>
                         <div class="divider-custom-line"></div>
                     </div>
-                    <div class="row" style="">
-                        <div class="col-lg-4 ml-auto" style="text-align: justify; color: white;padding-top: 5%"><p class="lead">Fort de mon expérience professionnelle en tant que technicien chimiste en recherche et développement depuis 2012, je recherche maintenant de nouvelle perspective d'évolution</p></div>
-                        <div class="col-lg-4 mr-auto"style="margin-left: auto;text-align: justify; color: white;padding-top: 5%"><p class="lead">Je souhaite aujourd'hui me reconvertir dans l'informatique et plus précisement dans le développement de programme afin de pouvoir l'appliquer au secteur de la chimie.</p></div>
+                    <div class="row justify-content-center" style="padding-top: 5%">
+                        <div class="col-lg-4 col-md-5 " style="text-align: justify; color: white"><p class="lead">Fort de mon expérience professionnelle en tant que technicien chimiste en recherche et développement depuis 2012, je recherche maintenant de nouvelle perspective d'évolution.</p></div>
+                        <div class="col-lg-4 col-md-5 "style="text-align: justify; color: white"><p class="lead">Je souhaite aujourd'hui me reconvertir dans l'informatique et plus précisement dans le développement de programme afin de pouvoir l'appliquer au secteur de la chimie.</p></div>
                     </div>
                     <div class="text-center">
                         <a href="{{asset('downloads/CV_FESSARD_BAPTISTE.pdf')}}" target="_blank" type="button" class="btn btn-primary btn-rounded">Obtenir mon CV  <i class="fas fa-cloud-download-alt"></i> </a>
@@ -127,24 +130,24 @@
                         <div class="divider-custom-line"></div>
                     </div>
 
-                        <div class="col-xl-10 col-lg-8 col-md-10 col-sm-10" style="margin-left: auto;margin-right:auto;padding-top: 7%">
-                            <div class="row row-cols-2" >
-                                <div class="col">
+
+                            <div class="row justify-content-center" style="padding-top: 5%; text-align: justify" >
+                                <div class="col-md-5 col-lg-5">
                                     <h6 style="color:  #f9e79f ">Octobre 2018- Févriver 2020</h6>
                                     <h4 class="card-title">Technicien de laboratoire - ToyoInk (76)</h4>
                                     <p>Contrôle qualité produits en cours de production et produits fini</p>
                                 </div>
-                                <div class="col">
+                                <div class="col-md-5 col-lg-5">
                                     <h6 style="color:  #f9e79f ">Avril 2017- Juillet 2017</h6>
                                     <h4 class="card-title">Technicien chimiste - SunChemical (60)</h4>
                                     <p>Laboratoire recherche et développement Encres</p>
                                 </div>
-                                <div class="col">
+                                <div class="col-md-5 col-lg-5">
                                     <h6 style="color:  #f9e79f ">Juin 2014 - Avril 2017</h6>
                                     <h4 class="card-title">Technicien formulation - Mäder (60)</h4>
                                     <p>Développement d'une nouvelle gamme de vernis d'imprégnation pour pièces automobiles</p>
                                 </div>
-                                <div class="col">
+                                <div class="col-md-5 col-lg-5">
                                     <h6 style="color:  #f9e79f ">Juillet 2012 - Novembre 2013</h6>
                                     <h4 class="card-title">Technicien formulation - PPG Coatings (76)</h4>
                                     <p>Conception d’une nouvelle gamme d’encres pour impression offset traditionnelle destinée à l’emballage métallique.</p>
@@ -152,7 +155,7 @@
 
 
                             </div>
-                        </div>
+
                 </div>
 
                 <!--/deuxieme slide-->
@@ -165,7 +168,7 @@
                         <div class="divider-custom-line"></div>
                     </div>
 
-                    <div class="col-xl-10 col-lg-8 col-md-10 col-sm-10" style="margin-left: auto;margin-right:auto;padding-top: 7%; text-align: center">
+                    <div class="col-xl-10 col-lg-8 col-md-10 col-sm-10" style="margin-left: auto;margin-right:auto;padding-top: 3%; text-align: center">
                         <p><img src="images/universite-rouen.png" style="max-width: 300px;height: auto"/></p>
                         <div class="row row-cols-3 " >
                             <div class="col" style="">
@@ -198,9 +201,9 @@
                         <div class="divider-custom-icon"><i class="fas fa-desktop"></i></div>
                         <div class="divider-custom-line"></div>
                     </div>
-                    <div class="col-xl-10 col-lg-10 col-md-10 col-sm-10" style="margin-left: auto;margin-right:auto;padding-top: 5%">
-                        <div class="row row-cols-2">
-                            <div class="col">
+
+                        <div class="row justify-content-center"style="padding-top: 3%">
+                            <div class="col-md-12 col-lg-5">
                                 <h4 class="card-title text-center">Langages</h4>
                                 <div class="text-center">
                                     <img class="image-row grayscale" src="images/html.png" onmouseover="show()" alt="Alt text" id="html" />
@@ -210,14 +213,14 @@
                                     <img class="image-row grayscale" src="images/vba.png" id="vba" alt="Alt text" />
                                 </div>
                             </div>
-                            <div class="col">
+                            <div class="col-md-12 col-lg-5">
                                 <h4 class="card-title text-center">Framework</h4>
                                 <div class="text-center">
                                     <img class="image-row grayscale" src="images/laravel.png" alt="Alt text" />
                                     <img class="image-row grayscale" src="images/bootstrap.png" alt="Alt text"  />
                                 </div>
                             </div>
-                            <div class="col">
+                            <div class="col-md-12 col-lg-5">
                                 <h4 class="card-title text-center">Outils</h4>
                                 <div class="text-center">
                                     <img class="image-row grayscale" src="images/phpstorm.png" alt="Alt text"  />
@@ -227,14 +230,14 @@
                                     <img class="image-row grayscale" src="images/wampserver.png" alt="Alt text"  />
                                 </div>
                             </div>
-                            <div class="col">
+                            <div class="col-md-12 col-lg-5">
                                 <h4 class="card-title text-center">Système gestion base de donnée</h4>
                                 <div class="text-center">
                                     <img class="image-row grayscale" src="images/mysql.png" alt="Alt text" />
                                 </div>
                             </div>
                         </div>
-                    </div>
+
                 </div>
                 <!--/quatrieme slide-->
                 <!-- cinquieme slide-->
@@ -389,38 +392,43 @@
 <footer id="sticky-footer" class="py-4 bg-dark text-white-50">
     <div class="container ">
         <div class="row text-center">
+
             <div class="col">
                 <span style="font-size: 2em; color: white">
                   <a href="tel:0652122675" class="link"><i class="fas fa-mobile-alt"></i></a>
                 </span>
+                <p>06.52.12.26.75</p>
             </div>
             <div class="col">
                 <span style="font-size: 2em; color: white">
                     <a href="mailto:baptistefessard@gmail.com"class="link"><i class="fas fa-envelope"></i></a>
                 </span>
+                <p>baptistefessard@gmail.com</p>
             </div>
             <div class="col">
                 <span style="font-size: 2em; color: white">
                     <a href="skype:baptistefessard@gmail.com?chat"class="link"><i class="fab fa-skype"></i></a>
                 </span>
+                <p>baptiste fessard</p>
             </div>
             <div class="col">
                 <span style="font-size: 2em; color: white">
                     <a href="https://github.com/bfessard?tab=repositories" target="_blank" class="link"> <i class="fab fa-github"></i></a>
                 </span>
+                <p>bfessard</p>
             </div>
             <div class="w-100"></div>
             <div class="col">
-                <p>06.52.12.26.75</p>
+
             </div>
             <div class="col">
-                <p>baptistefessard@gmail.com</p>
+
             </div>
             <div class="col">
-                <p>baptiste fessard</p>
+
             </div>
             <div class="col">
-                <p>bfessard</p>
+
             </div>
         </div>
     </div>
