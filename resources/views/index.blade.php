@@ -112,9 +112,9 @@
                         <div class="divider-custom-icon"><i class="fas fa-comment-alt"></i></div>
                         <div class="divider-custom-line"></div>
                     </div>
-                    <div class="row justify-content-center" style="padding-top: 5%">
-                        <div class="col-lg-4 col-md-5 " style="text-align: justify; color: white"><p class="lead">Fort de mon expérience professionnelle en tant que technicien chimiste en recherche et développement depuis 2012, je recherche maintenant de nouvelle perspective d'évolution.</p></div>
-                        <div class="col-lg-4 col-md-5 "style="text-align: justify; color: white"><p class="lead">Je souhaite aujourd'hui me reconvertir dans l'informatique et plus précisement dans le développement de programme afin de pouvoir l'appliquer au secteur de la chimie.</p></div>
+                    <div class="row justify-content-center" style="padding-top: 5%;text-align: justify; color:white">
+                        <div class="col-lg-4 col-md-5 "><p class="lead">Fort de mon expérience professionnelle en tant que technicien chimiste en recherche et développement depuis 2012, je recherche maintenant de nouvelle perspective d'évolution.</p></div>
+                        <div class="col-lg-4 col-md-5 "><p class="lead">Je souhaite aujourd'hui me reconvertir dans l'informatique et plus précisement dans le développement de programme afin de pouvoir l'appliquer au secteur de la chimie.</p></div>
                     </div>
                     <div class="text-center">
                         <a href="{{asset('downloads/CV_FESSARD_BAPTISTE.pdf')}}" target="_blank" type="button" class="btn btn-primary btn-rounded">Obtenir mon CV  <i class="fas fa-cloud-download-alt"></i> </a>
@@ -131,26 +131,26 @@
                     </div>
 
 
-                            <div class="row justify-content-center" style="padding-top: 5%; text-align: justify" >
+                            <div class="row justify-content-center" style="padding-top: 5%; text-align: center" >
                                 <div class="col-md-5 col-lg-5">
-                                    <h6 style="color:  #f9e79f ">Octobre 2018- Févriver 2020</h6>
+                                    <h6 style="color:  #f9e79f ">Octobre 2018 - Févriver 2020</h6>
                                     <h4 class="card-title">Technicien de laboratoire - ToyoInk (76)</h4>
-                                    <p>Contrôle qualité produits en cours de production et produits fini</p>
+                                    <p style="color : #c0cee6">Contrôle qualité produits en cours de production et produits fini</p>
                                 </div>
                                 <div class="col-md-5 col-lg-5">
                                     <h6 style="color:  #f9e79f ">Avril 2017- Juillet 2017</h6>
                                     <h4 class="card-title">Technicien chimiste - SunChemical (60)</h4>
-                                    <p>Laboratoire recherche et développement Encres</p>
+                                    <p style="color : #c0cee6">Laboratoire recherche et développement Encres</p>
                                 </div>
                                 <div class="col-md-5 col-lg-5">
                                     <h6 style="color:  #f9e79f ">Juin 2014 - Avril 2017</h6>
                                     <h4 class="card-title">Technicien formulation - Mäder (60)</h4>
-                                    <p>Développement d'une nouvelle gamme de vernis d'imprégnation pour pièces automobiles</p>
+                                    <p style="color : #c0cee6">Développement d'une nouvelle gamme de vernis d'imprégnation pour pièces automobiles</p>
                                 </div>
                                 <div class="col-md-5 col-lg-5">
                                     <h6 style="color:  #f9e79f ">Juillet 2012 - Novembre 2013</h6>
                                     <h4 class="card-title">Technicien formulation - PPG Coatings (76)</h4>
-                                    <p>Conception d’une nouvelle gamme d’encres pour impression offset traditionnelle destinée à l’emballage métallique.</p>
+                                    <p style="color : #c0cee6">Conception d’une nouvelle gamme d’encres pour impression offset traditionnelle destinée à l’emballage métallique.</p>
                                 </div>
 
 
@@ -395,7 +395,7 @@
 
             <div class="col">
                 <span style="font-size: 2em; color: white">
-                  <a href="tel:0652122675" class="link"><i class="fas fa-mobile-alt"></i></a>
+                  <a href="tel:0652122675" class="link"><i class="fas fa-mobile-alt"></a></i>
                 </span>
                 <p>06.52.12.26.75</p>
             </div>
@@ -417,19 +417,7 @@
                 </span>
                 <p>bfessard</p>
             </div>
-            <div class="w-100"></div>
-            <div class="col">
 
-            </div>
-            <div class="col">
-
-            </div>
-            <div class="col">
-
-            </div>
-            <div class="col">
-
-            </div>
         </div>
     </div>
 
