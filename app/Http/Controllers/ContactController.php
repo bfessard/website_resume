@@ -18,7 +18,7 @@ class ContactController extends Controller
     {
         mail::send('email_contact',$request->all(),function($message)
         {
-            $message->to('baptistefessard@gmail.com')->subject('Contact');
+            $message->to('b&#97;ptiste.fess&#97;rd@gm&#97;il.com')->subject('Contact');
         });
 
         return redirect()->back();
