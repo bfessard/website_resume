@@ -401,7 +401,7 @@
             </div>
             <div class="col">
                 <span style="font-size: 2em; color: white">
-                    <a href="mailto:baptistefessard@gmail.com"class="link"><i class="fas fa-envelope"></i></a>
+                    <a href="mailto:b&#97;ptiste.fess&#97;rd@gm&#97;il.com"class="link"><i class="fas fa-envelope"></i></a>
                 </span>
                 <p>baptistefessard@gmail.com</p>
             </div>
