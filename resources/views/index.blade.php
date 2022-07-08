@@ -317,7 +317,7 @@
     <div class="container">
         <div class="row center-block">
             <div class="col-md-12 col-sm-12 align-self-center">
-                <div class="form-group">
+               /* <div class="form-group">
                     {!! Form::open(['url' => '/']) !!}
                     <div class="{!! $errors->has('nom') ? 'has-error' : '' !!} ">
                         {!! Form::text('nom', null, ['class' => 'form-control', 'placeholder' => 'Votre nom']) !!}
@@ -334,7 +334,7 @@
                     {!! Form::submit('Envoyer !', ['class' => 'btn btn-info pull-right']) !!}
                     {!! Form::close() !!}
 
-                </div>
+                </div> */
             </div>
         </div>
 
