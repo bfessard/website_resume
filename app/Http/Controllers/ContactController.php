@@ -14,7 +14,7 @@ class ContactController extends Controller
         return view('index');
     }
 
-    public function PostForm(ContactRequest $request)
+    /*public function PostForm(ContactRequest $request)
     {
         mail::send('email_contact',$request->all(),function($message)
         {
@@ -22,5 +22,5 @@ class ContactController extends Controller
         });
 
         return redirect()->back();
-    }
+    }*/
 }
